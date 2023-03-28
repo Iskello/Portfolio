@@ -1,0 +1,50 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    padding-top: 425px;
+    padding-bottom: 50px;
+    background: url(../img/bg2.jpg) no-repeat 50%/cover;   
+    z-index: 2;
+    .logo {
+        font-family: 'Yesteryear', cursive;
+        font-size: 200px;
+        line-height: 200px;
+        text-align: center;
+        color: #454086;
+    }
+    &__btns {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline; 
+    }
+    &__link {
+        color: #000;
+        margin-right: 50px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 21px;
+        transition: 0.5s all;
+        &:hover {
+            color: #ffffff;
+            transform: scale(1.05);
+            text-decoration: none;
+        }
+    }
+    &__subtitle {
+        position: relative;
+        z-index: 2;
+        &:before {
+            content: '';
+            width: 75px;
+            height: 75px;
+            background: $main-color;
+            position: absolute;
+            border-radius: 100%;
+            z-index: -1;
+            top: -10%;
+            right: 22%;
+        }
+    }
+    
+}

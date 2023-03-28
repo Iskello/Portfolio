@@ -1,0 +1,42 @@
+.title {
+    font-weight: 700;   
+    font-size: 36px;
+    line-height: 60px;   
+    &_fz14 {             
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fz40 {
+        font-size: 40px;
+        text-align: right;
+    }
+    &_fz50 {
+        margin-top: 40px;
+        font-size: 50px;
+        text-align: right;
+    }
+}
+
+.section-title {
+    text-align: center;
+    position: relative;
+    @include before_circle;
+    &:before {
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.section-subtitle {
+    text-align: center;
+}
